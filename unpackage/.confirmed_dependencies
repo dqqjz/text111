@@ -1,0 +1,79 @@
+{
+	"index.html": {
+		"resources": [
+			"images/cbd.jpg",
+			"images/yuantiao.jpg",
+			"css/app.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/shuijiao.jpg",
+			"slist.html",
+			"products.html",
+			"maccount.html",
+			"search.js",
+			"searchp.js"
+		],
+		"refer": [
+			"slist.html",
+			"products.html",
+			"maccount.html"
+		]
+	},
+	"slist.html": {
+		"resources": [
+			"css/app.css",
+			"css/mui.min.css",
+			"index.html",
+			"products.html",
+			"maccount.html"
+		],
+		"refer": [
+			"index.html",
+			"products.html",
+			"maccount.html"
+		]
+	},
+	"products.html": {
+		"resources": [
+			"css/app.css",
+			"css/mui.min.css",
+			"sproducts.html",
+			"slist.html",
+			"maccount.html",
+			"images/cbd.jpg",
+			"images/yuantiao.jpg",
+			"images/shuijiao.jpg",
+			"index.html"
+		],
+		"refer": [
+			"sproducts.html",
+			"slist.html",
+			"maccount.html",
+			"index.html"
+		]
+	},
+	"sproducts.html": {
+		"resources": [
+			"css/mui.min.css",
+			"css/mui.indexedlist.css",
+			"js/mui.indexedlist.js",
+			"products.html"
+		],
+		"refer": [
+			"products.html"
+		]
+	},
+	"maccount.html": {
+		"resources": [
+			"products.html",
+			"css/app.css",
+			"css/mui.min.css",
+			"index.html"
+		],
+		"refer": [
+			"products.html",
+			"index.html"
+		]
+	}
+}

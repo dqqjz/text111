@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>代购开心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
+					
+					<h1 class="mui-title">采购单</h1>
+				</header>		
+				
+				
+	<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+<nav class="mui-bar mui-bar-tab">
+			<div class="mui-tab-item" id = "search">
+				<a href="index.html" style="color: gray;">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">搜索</span>
+				</a>
+			</div>
+			<div class="mui-tab-item  mui-active" id = "orderl">
+				<a href="slist.html" >
+					<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+					<span class="mui-tab-label">采购单</span>
+				</a>
+			</div>
+			<div class="mui-tab-item" id = "product">
+				<a href="products.html" style="color: gray;">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">商品</span>
+				</a>
+			</div>
+			<div class="mui-tab-item  " id = "my">
+				<a href="maccount.html" style="color: gray;" >
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">我的</span>
+				</a>
+			</div>
+		</nav>			
+				
+				
+				
+				
+				
+				
+				<div class="mui-content">
+	
+			<ul id="OA_task_1" class="mui-table-view">
+				
+<hr style="border: 1px solid #c0c0c0">
+		<div align="center">chemist</div>		
+<hr style="border: 1px solid #c0c0c0">
+				
+				<li class="mui-table-view-cell mui-checkbox mui-left">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div >
+					<input name="checkbox" type="checkbox" class="mui-slider-handle">Item 7
+					</div>
+				</li>
+								<li class="mui-table-view-cell mui-checkbox mui-left">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div >
+						<input name="checkbox" type="checkbox" class="mui-slider-handle">Item 8
+						
+					</div>
+				</li>
+								<li class="mui-table-view-cell mui-checkbox mui-left">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div>
+						<input name="checkbox" type="checkbox" class="mui-slider-handle">Item 9
+					</div>
+				</li>
+<hr style="border: 1px solid #c0c0c0">
+		<div align="center">coles</div>		
+<hr style="border: 1px solid #c0c0c0">
+				</li>
+								<li class="mui-table-view-cell mui-checkbox mui-left">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div>
+						<input name="checkbox" type="checkbox" class="mui-slider-handle">Item 10
+					</div>
+				</li>
+								</li>
+								<li class="mui-table-view-cell mui-checkbox mui-left">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div>
+						<input name="checkbox" type="checkbox" class="mui-slider-handle">Item 11
+					</div>
+				</li>
+								</li>
+								<li class="mui-table-view-cell mui-checkbox mui-left">
+					<div class="mui-slider-right mui-disabled">
+						<a class="mui-btn mui-btn-red">删除</a>
+					</div>
+					<div>
+						<input name="checkbox" type="checkbox" class="mui-slider-handle">Item 92
+					</div>
+				</li>
+
+
+			</ul>
+			
+			
+		</div>
+		
+	</div>	
+	</div>		
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+		
+				$('#OA_task_1').on('tap', '.mui-btn', function(event) {
+					var elem = this;
+					var li = elem.parentNode.parentNode;
+					mui.confirm('确认删除该条记录？', 'Hello MUI', btnArray, function(e) {
+						if (e.index == 0) {
+							li.parentNode.removeChild(li);
+						} else {
+							setTimeout(function() {
+								$.swipeoutClose(li);
+							}, 0);
+						}
+					});
+				});
+				var btnArray = ['确认', '取消'];
+			})(mui);
+		</script>
+		
+		
+		 <script type="text/javascript" charset="utf-8">
+      	mui.init();
+	
+//    	var offCanvasSide = document.getElementById("offCanvasSide");
+//    	document.getElementById('offCanvasHide').addEventListener('tap', function() {
+//				offCanvasWrapper.offCanvas('close');
+//			});
+		var tab1 = document.getElementById("search");
+		tab1.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "index.html";
+			
+		})
+		var tab2 = document.getElementById("orderl");
+		tab2.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "slist.html";
+			
+		})
+		var tab3 = document.getElementById("product");
+		tab3.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "products.html";
+			
+		})
+				var tab4 = document.getElementById("my");
+		tab4.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "maccount.html";
+			
+		})
+		
+//		mui('body').on('tap','a',function(){document.location.href=this.href;});
+
+    </script>
+	</body>
+
+</html>

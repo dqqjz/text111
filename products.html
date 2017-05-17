@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    
+    		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+
+</head>
+<body>
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<style>
+			
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--侧滑菜单容器-->
+		
+			<!--菜单部分-->
+			
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-back mui-pull-left"></a>
+					<!--<a href="sproducts.html">
+					<div class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></div>
+					</a>-->
+					<h1 class="mui-title">商品</h1>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<nav class="mui-bar mui-bar-tab">
+			<div class="mui-tab-item" id = "search">
+				<a href="index.html" style="color: gray;">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">搜索</span>
+				</a>
+			</div>
+			<div class="mui-tab-item" id = "orderl">
+				<a href="slist.html" style="color: gray;">
+					<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+					<span class="mui-tab-label">采购单</span>
+				</a>
+			</div>
+			<div class="mui-tab-item mui-active" id = "product">
+				<a href="products.html" >
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">商品</span>
+				</a>
+			</div>
+			<div class="mui-tab-item  " id = "my">
+				<a href="maccount.html" style="color: gray;" >
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">我的</span>
+				</a>
+			</div>
+		</nav>
+		<div class="mui-content">
+		
+		    <div class="mui-content-padded">
+			    	<a href="sproducts.html">
+		        <button type="button" class="mui-btn mui-btn-block">戳我！精确找产品！</button>
+				</a>
+		    </div>
+
+			<div id="tabbar-with-contact" class="mui-control-content mui-active">
+				
+				<hr style="border: 1px solid #c0c0c0">
+		<div align="center">我猜你喜欢！</div>		
+<hr style="border: 1px solid #c0c0c0">
+				<div id="tabbar" class="mui-control-content mui-active">
+
+			<!--<div class="title">
+				结果
+			</div>-->
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="images/cbd.jpg">
+						<div class="mui-media-body">
+							CBD
+							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" >
+					<a class='mui-navigate-right' href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="images/yuantiao.jpg">
+						<div class="mui-media-body">
+							远眺
+							<p class='mui-ellipsis'>静静的看这个世界，最后终于疯了</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+						<div class="mui-media-body">
+							幸福
+							<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			</div>
+<hr style="border: 1px solid #c0c0c0">			
+					<div align="center">热销产品推荐！</div>		
+<hr style="border: 1px solid #c0c0c0">
+				<div id="tabbar" class="mui-control-content mui-active">
+
+			<!--<div class="title">
+				结果
+			</div>-->
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="images/cbd.jpg">
+						<div class="mui-media-body">
+							CBD
+							<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media" >
+					<a class='mui-navigate-right' href="javascript:;">
+						<img class="mui-media-object mui-pull-left" src="images/yuantiao.jpg">
+						<div class="mui-media-body">
+							远眺
+							<p class='mui-ellipsis'>静静的看这个世界，最后终于疯了</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img class="mui-media-object mui-pull-left" src="images/shuijiao.jpg">
+						<div class="mui-media-body">
+							幸福
+							<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			</div>
+	
+	
+			
+
+		
+		
+		
+		
+		
+		
+				
+			</div>
+			
+			
+		
+				</div>
+				 <!--off-canvas backdrop--> 
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		
+	</body>
+		<script src="js/mui.min.js"></script>
+		
+				
+		   <script type="text/javascript" charset="utf-8">
+      	mui.init();
+	
+//    	var offCanvasSide = document.getElementById("offCanvasSide");
+//    	document.getElementById('offCanvasHide').addEventListener('tap', function() {
+//				offCanvasWrapper.offCanvas('close');
+//			});
+		var tab1 = document.getElementById("search");
+		tab1.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "index.html";
+			
+		})
+		var tab2 = document.getElementById("orderl");
+		tab2.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "slist.html";
+			
+		})
+		var tab3 = document.getElementById("product");
+		tab3.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "products.html";
+			
+		})
+				var tab4 = document.getElementById("my");
+		tab4.addEventListener('tap', function(){
+//			alert("111");
+		document.location.href= "maccount.html";
+			
+		})
+		
+//		mui('body').on('tap','a',function(){document.location.href=this.href;});
+
+    </script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+</body>
+</html>
