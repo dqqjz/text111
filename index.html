@@ -159,9 +159,11 @@
 		<div class="mui-content">
 			<div id="tabbar" class="mui-control-content mui-active">
 				<!--<h5>默认搜索框：</h5>-->
+				
 				<div class="mui-input-row mui-search" >
 					<input type="search" id = "search_input"   class="mui-input-clear" placeholder="搜索产品价格列表！">
 				</div>
+			
 			<!--<div class="title">
 				结果
 			</div>-->
@@ -182,6 +184,7 @@
             <input type="hidden" id="tw_result" value="" />
             <input type="hidden" id="search_ready" value="0" />
 			</div>
+
 			
 		</div>
 				</div>
@@ -189,6 +192,11 @@
 				<div class="mui-off-canvas-backdrop"></div>
 			</div>
 		</div>
+		
+					
+			   <div id="search_result" class ="search_result">
+      
+  </div> 
 		<script src="js/mui.min.js"></script>
 		
 		   <script type="text/javascript" charset="utf-8">
@@ -291,7 +299,7 @@
 	<script>
 		mui.init({
 			swipeBack:true //启用右滑关闭功能
-		});
+		})
 	</script>
 </body>
  <script src = "searchp.js"></script>

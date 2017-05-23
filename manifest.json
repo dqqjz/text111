@@ -205,7 +205,8 @@
 					"products.html",
 					"maccount.html",
 					"search.js",
-					"searchp.js"
+					"searchp.js",
+					"index.html"
 				],
 				"refer": [],
 				"priority": 0

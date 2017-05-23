@@ -12,12 +12,14 @@
 			"products.html",
 			"maccount.html",
 			"search.js",
-			"searchp.js"
+			"searchp.js",
+			"index.html"
 		],
 		"refer": [
 			"slist.html",
 			"products.html",
-			"maccount.html"
+			"maccount.html",
+			"index.html"
 		]
 	},
 	"slist.html": {
